@@ -1,0 +1,528 @@
+❯ python3 main.py --log="info"
+[Config] Log level is 'INFO'. Use --log=info for details.
+
+==================================================
+               CryptoCat Cracker
+==================================================
+Please choose an execution mode:
+  1. Single-Threaded Mode
+  2. Multi-Threaded Mode
+  3. Kubernetes Mode (Coming Soon)
+  4. Exit
+--------------------------------------------------
+Enter your choice [1-4]: 2
+Enter number of threads (1-12 rec): 8
+
+---[ Multi-Threaded (8 Threads) Mode ]---
+Please choose a target:
+  1. Crack a Single Hash
+  2. Crack Hashes From a File
+  3. Run Full Assignment
+  4. Back to Main Menu
+Enter target [1-4]: 3
+
+-- Target: Full Assignment --
+Loaded 0 previously cracked assignment hashes.
+
+==================== PROCESSING 10 UNCRACKED 4-CHAR HASHES ====================
+
+--- [Attempt #1] Cracking 10 remaining hash(es) ---
+
+> Running: ./bin/table 4 65536 ./bin/rainbow_l4_session.dat --threads 8 --verbose
+--- Generating Rainbow Table (Parallel I/O) ---
+  Using 8 thread(s).
+  Chain generation and writing took: 7.0s
+Consolidating temporary files...
+  File consolidation took: < 0.1s
+✅ Table generation done. (Total time: 7.0s)
+Table command finished in 7.0s.
+
+-> Guessing hash: f8340c836d41f77cd92708bbd5443cbe
+
+> Running: ./bin/guess ./bin/rainbow_l4_session.dat f8340c836d41f77cd92708bbd5443cbe --threads 8 --verbose
+Table loaded and split for 8 threads. (took < 0.1s)
+
+--- SUCCESS ---
+Password found: NXB1
+Password search took: < 0.1s
+Total AES evaluations: 155444
+Total execution time: 0.1s
+Guess command finished in 0.1s.
+🎉 SUCCESS! Hash: f8340c836d41f77cd92708bbd5443cbe, Password: NXB1
+
+-> Guessing hash: a5da39d04c817287740f53e6bdc13b5c
+
+> Running: ./bin/guess ./bin/rainbow_l4_session.dat a5da39d04c817287740f53e6bdc13b5c --threads 8 --verbose
+Table loaded and split for 8 threads. (took < 0.1s)
+
+--- FAILURE ---
+Password not found in the table.
+Password search took: 0.2s
+Total AES evaluations: 296448
+Total execution time: 0.2s
+Guess command finished in 0.2s.
+
+-> Guessing hash: 5321abb3b57f535e0e3186b7a3204dff
+
+> Running: ./bin/guess ./bin/rainbow_l4_session.dat 5321abb3b57f535e0e3186b7a3204dff --threads 8 --verbose
+Table loaded and split for 8 threads. (took < 0.1s)
+
+--- SUCCESS ---
+Password found: zBLr
+Password search took: < 0.1s
+Total AES evaluations: 77409
+Total execution time: < 0.1s
+Guess command finished in 0.1s.
+🎉 SUCCESS! Hash: 5321abb3b57f535e0e3186b7a3204dff, Password: zBLr
+
+-> Guessing hash: 626e33f13574402935a30b2d200ebe53
+
+> Running: ./bin/guess ./bin/rainbow_l4_session.dat 626e33f13574402935a30b2d200ebe53 --threads 8 --verbose
+Table loaded and split for 8 threads. (took < 0.1s)
+
+--- SUCCESS ---
+Password found: ?K5D
+Password search took: < 0.1s
+Total AES evaluations: 3561
+Total execution time: < 0.1s
+Guess command finished in 0.0s.
+🎉 SUCCESS! Hash: 626e33f13574402935a30b2d200ebe53, Password: ?K5D
+
+-> Guessing hash: ff293b3c17785c6eafcc1d0f0615f445
+
+> Running: ./bin/guess ./bin/rainbow_l4_session.dat ff293b3c17785c6eafcc1d0f0615f445 --threads 8 --verbose
+Table loaded and split for 8 threads. (took < 0.1s)
+
+--- SUCCESS ---
+Password found: Em?q
+Password search took: < 0.1s
+Total AES evaluations: 3396
+Total execution time: < 0.1s
+Guess command finished in 0.0s.
+🎉 SUCCESS! Hash: ff293b3c17785c6eafcc1d0f0615f445, Password: Em?q
+
+-> Guessing hash: 212549071c902ae28bc239ce6f1eec49
+
+> Running: ./bin/guess ./bin/rainbow_l4_session.dat 212549071c902ae28bc239ce6f1eec49 --threads 8 --verbose
+Table loaded and split for 8 threads. (took < 0.1s)
+
+--- SUCCESS ---
+Password found: ?90s
+Password search took: < 0.1s
+Total AES evaluations: 97458
+Total execution time: < 0.1s
+Guess command finished in 0.1s.
+🎉 SUCCESS! Hash: 212549071c902ae28bc239ce6f1eec49, Password: ?90s
+
+-> Guessing hash: c1fdbe6dc8eb0ed6aeea0e877ba836dd
+
+> Running: ./bin/guess ./bin/rainbow_l4_session.dat c1fdbe6dc8eb0ed6aeea0e877ba836dd --threads 8 --verbose
+Table loaded and split for 8 threads. (took < 0.1s)
+
+--- SUCCESS ---
+Password found: 7vVY
+Password search took: < 0.1s
+Total AES evaluations: 4745
+Total execution time: < 0.1s
+Guess command finished in 0.0s.
+🎉 SUCCESS! Hash: c1fdbe6dc8eb0ed6aeea0e877ba836dd, Password: 7vVY
+
+-> Guessing hash: 727578e6768a6750ada716f8dbb0e47c
+
+> Running: ./bin/guess ./bin/rainbow_l4_session.dat 727578e6768a6750ada716f8dbb0e47c --threads 8 --verbose
+Table loaded and split for 8 threads. (took < 0.1s)
+
+--- SUCCESS ---
+Password found: iZTn
+Password search took: < 0.1s
+Total AES evaluations: 102487
+Total execution time: < 0.1s
+Guess command finished in 0.1s.
+🎉 SUCCESS! Hash: 727578e6768a6750ada716f8dbb0e47c, Password: iZTn
+
+-> Guessing hash: c77e40f417dc4ed074b1df3b916f85c9
+
+> Running: ./bin/guess ./bin/rainbow_l4_session.dat c77e40f417dc4ed074b1df3b916f85c9 --threads 8 --verbose
+Table loaded and split for 8 threads. (took < 0.1s)
+
+--- SUCCESS ---
+Password found: Lqat
+Password search took: < 0.1s
+Total AES evaluations: 17736
+Total execution time: < 0.1s
+Guess command finished in 0.0s.
+🎉 SUCCESS! Hash: c77e40f417dc4ed074b1df3b916f85c9, Password: Lqat
+
+-> Guessing hash: 11cd649a72075e28384bce23c72c253d
+
+> Running: ./bin/guess ./bin/rainbow_l4_session.dat 11cd649a72075e28384bce23c72c253d --threads 8 --verbose
+Table loaded and split for 8 threads. (took < 0.1s)
+
+--- FAILURE ---
+Password not found in the table.
+Password search took: 0.2s
+Total AES evaluations: 293120
+Total execution time: 0.2s
+Guess command finished in 0.2s.
+
+--- [Attempt #2] Cracking 2 remaining hash(es) ---
+
+> Running: ./bin/table 4 65536 ./bin/rainbow_l4_session.dat --threads 8 --verbose
+--- Generating Rainbow Table (Parallel I/O) ---
+  Using 8 thread(s).
+  Chain generation and writing took: 9.1s
+Consolidating temporary files...
+  File consolidation took: < 0.1s
+✅ Table generation done. (Total time: 9.1s)
+Table command finished in 9.1s.
+
+-> Guessing hash: a5da39d04c817287740f53e6bdc13b5c
+
+> Running: ./bin/guess ./bin/rainbow_l4_session.dat a5da39d04c817287740f53e6bdc13b5c --threads 8 --verbose
+Table loaded and split for 8 threads. (took < 0.1s)
+
+--- SUCCESS ---
+Password found: VJ4D
+Password search took: < 0.1s
+Total AES evaluations: 159505
+Total execution time: 0.1s
+Guess command finished in 0.1s.
+🎉 SUCCESS! Hash: a5da39d04c817287740f53e6bdc13b5c, Password: VJ4D
+
+-> Guessing hash: 11cd649a72075e28384bce23c72c253d
+
+> Running: ./bin/guess ./bin/rainbow_l4_session.dat 11cd649a72075e28384bce23c72c253d --threads 8 --verbose
+Table loaded and split for 8 threads. (took < 0.1s)
+
+--- FAILURE ---
+Password not found in the table.
+Password search took: 0.2s
+Total AES evaluations: 295424
+Total execution time: 0.2s
+Guess command finished in 0.2s.
+
+--- [Attempt #3] Cracking 1 remaining hash(es) ---
+
+> Running: ./bin/table 4 65536 ./bin/rainbow_l4_session.dat --threads 8 --verbose
+--- Generating Rainbow Table (Parallel I/O) ---
+  Using 8 thread(s).
+  Chain generation and writing took: 9.2s
+Consolidating temporary files...
+  File consolidation took: < 0.1s
+✅ Table generation done. (Total time: 9.2s)
+Table command finished in 9.2s.
+
+-> Guessing hash: 11cd649a72075e28384bce23c72c253d
+
+> Running: ./bin/guess ./bin/rainbow_l4_session.dat 11cd649a72075e28384bce23c72c253d --threads 8 --verbose
+Table loaded and split for 8 threads. (took < 0.1s)
+
+--- FAILURE ---
+Password not found in the table.
+Password search took: 0.2s
+Total AES evaluations: 293376
+Total execution time: 0.2s
+Guess command finished in 0.2s.
+
+❌ No new passwords found in this attempt. Regenerating table...
+
+--- [Attempt #4] Cracking 1 remaining hash(es) ---
+
+> Running: ./bin/table 4 65536 ./bin/rainbow_l4_session.dat --threads 8 --verbose
+--- Generating Rainbow Table (Parallel I/O) ---
+  Using 8 thread(s).
+  Chain generation and writing took: 9.0s
+Consolidating temporary files...
+  File consolidation took: < 0.1s
+✅ Table generation done. (Total time: 9.0s)
+Table command finished in 9.0s.
+
+-> Guessing hash: 11cd649a72075e28384bce23c72c253d
+
+> Running: ./bin/guess ./bin/rainbow_l4_session.dat 11cd649a72075e28384bce23c72c253d --threads 8 --verbose
+Table loaded and split for 8 threads. (took < 0.1s)
+
+--- SUCCESS ---
+Password found: ktDw
+Password search took: 0.1s
+Total AES evaluations: 227836
+Total execution time: 0.1s
+Guess command finished in 0.1s.
+🎉 SUCCESS! Hash: 11cd649a72075e28384bce23c72c253d, Password: ktDw
+
+✅ Finished processing all 4-char hashes in 35.8s.
+
+==================== PROCESSING 10 UNCRACKED 5-CHAR HASHES ====================
+
+--- [Attempt #1] Cracking 10 remaining hash(es) ---
+
+> Running: ./bin/table 5 262144 ./bin/rainbow_l5_session.dat --threads 8 --verbose
+--- Generating Rainbow Table (Parallel I/O) ---
+  Using 8 thread(s).
+  Chain generation and writing took: 9m 56s
+Consolidating temporary files...
+  File consolidation took: < 0.1s
+✅ Table generation done. (Total time: 9m 56s)
+Table command finished in 9m 56s.
+
+-> Guessing hash: 2a06b95a264d30c1282c0eacc8fd4eff
+
+> Running: ./bin/guess ./bin/rainbow_l5_session.dat 2a06b95a264d30c1282c0eacc8fd4eff --threads 8 --verbose
+Table loaded and split for 8 threads. (took < 0.1s)
+
+--- SUCCESS ---
+Password found: DlTVT
+Password search took: 0.4s
+Total AES evaluations: 1025218
+Total execution time: 0.5s
+Guess command finished in 0.5s.
+🎉 SUCCESS! Hash: 2a06b95a264d30c1282c0eacc8fd4eff, Password: DlTVT
+
+-> Guessing hash: f367b5557726a7a7e3c412e2e2b8b67d
+
+> Running: ./bin/guess ./bin/rainbow_l5_session.dat f367b5557726a7a7e3c412e2e2b8b67d --threads 8 --verbose
+Table loaded and split for 8 threads. (took < 0.1s)
+
+--- FAILURE ---
+Password not found in the table.
+Password search took: 42.5s
+Total AES evaluations: 74522624
+Total execution time: 42.6s
+Guess command finished in 42.6s.
+
+-> Guessing hash: 0b912f372ae901469920803051d95b6c
+
+> Running: ./bin/guess ./bin/rainbow_l5_session.dat 0b912f372ae901469920803051d95b6c --threads 8 --verbose
+Table loaded and split for 8 threads. (took 0.1s)
+
+--- FAILURE ---
+Password not found in the table.
+Password search took: 40.0s
+Total AES evaluations: 74268672
+Total execution time: 40.1s
+Guess command finished in 40.1s.
+
+-> Guessing hash: b6bb4144918a257b256293b7dfe080ae
+
+> Running: ./bin/guess ./bin/rainbow_l5_session.dat b6bb4144918a257b256293b7dfe080ae --threads 8 --verbose
+Table loaded and split for 8 threads. (took 0.1s)
+
+--- SUCCESS ---
+Password found: OsHuA
+Password search took: 17.9s
+Total AES evaluations: 29955015
+Total execution time: 18.1s
+Guess command finished in 18.1s.
+🎉 SUCCESS! Hash: b6bb4144918a257b256293b7dfe080ae, Password: OsHuA
+
+-> Guessing hash: 7f150f7990a25b72ff2881afe4b88b62
+
+> Running: ./bin/guess ./bin/rainbow_l5_session.dat 7f150f7990a25b72ff2881afe4b88b62 --threads 8 --verbose
+Table loaded and split for 8 threads. (took < 0.1s)
+
+--- FAILURE ---
+Password not found in the table.
+Password search took: 42.0s
+Total AES evaluations: 74743808
+Total execution time: 42.1s
+Guess command finished in 42.1s.
+
+-> Guessing hash: 258f7ebad296c6b14dcd7d11fd21fb57
+
+> Running: ./bin/guess ./bin/rainbow_l5_session.dat 258f7ebad296c6b14dcd7d11fd21fb57 --threads 8 --verbose
+Table loaded and split for 8 threads. (took < 0.1s)
+
+--- SUCCESS ---
+Password found: fEd0m
+Password search took: 22.2s
+Total AES evaluations: 38623120
+Total execution time: 22.3s
+Guess command finished in 22.3s.
+🎉 SUCCESS! Hash: 258f7ebad296c6b14dcd7d11fd21fb57, Password: fEd0m
+
+-> Guessing hash: 30ac5f6e343fcfa96718c465e69ea0e0
+
+> Running: ./bin/guess ./bin/rainbow_l5_session.dat 30ac5f6e343fcfa96718c465e69ea0e0 --threads 8 --verbose
+Table loaded and split for 8 threads. (took 0.1s)
+
+--- SUCCESS ---
+Password found: ?DWhn
+Password search took: 0.8s
+Total AES evaluations: 1353168
+Total execution time: 0.9s
+Guess command finished in 0.9s.
+🎉 SUCCESS! Hash: 30ac5f6e343fcfa96718c465e69ea0e0, Password: ?DWhn
+
+-> Guessing hash: 0593bd4d2a40db0ede8c55bf62ee8646
+
+> Running: ./bin/guess ./bin/rainbow_l5_session.dat 0593bd4d2a40db0ede8c55bf62ee8646 --threads 8 --verbose
+Table loaded and split for 8 threads. (took 0.1s)
+
+--- FAILURE ---
+Password not found in the table.
+Password search took: 41.0s
+Total AES evaluations: 74838016
+Total execution time: 41.1s
+Guess command finished in 41.1s.
+
+-> Guessing hash: 801c580fd61a3a36feea0f027b990c22
+
+> Running: ./bin/guess ./bin/rainbow_l5_session.dat 801c580fd61a3a36feea0f027b990c22 --threads 8 --verbose
+Table loaded and split for 8 threads. (took < 0.1s)
+
+--- FAILURE ---
+Password not found in the table.
+Password search took: 42.5s
+Total AES evaluations: 75055104
+Total execution time: 42.5s
+Guess command finished in 42.5s.
+
+-> Guessing hash: 7f0398784a0692bd301804aeb9436d76
+
+> Running: ./bin/guess ./bin/rainbow_l5_session.dat 7f0398784a0692bd301804aeb9436d76 --threads 8 --verbose
+Table loaded and split for 8 threads. (took < 0.1s)
+
+--- FAILURE ---
+Password not found in the table.
+Password search took: 41.8s
+Total AES evaluations: 75067392
+Total execution time: 41.9s
+Guess command finished in 41.9s.
+
+--- [Attempt #2] Cracking 6 remaining hash(es) ---
+
+> Running: ./bin/table 5 262144 ./bin/rainbow_l5_session.dat --threads 8 --verbose
+--- Generating Rainbow Table (Parallel I/O) ---
+  Using 8 thread(s).
+  Chain generation and writing took: 9m 6s
+Consolidating temporary files...
+  File consolidation took: < 0.1s
+✅ Table generation done. (Total time: 9m 6s)
+Table command finished in 9m 6s.
+
+-> Guessing hash: f367b5557726a7a7e3c412e2e2b8b67d
+
+> Running: ./bin/guess ./bin/rainbow_l5_session.dat f367b5557726a7a7e3c412e2e2b8b67d --threads 8 --verbose
+Table loaded and split for 8 threads. (took < 0.1s)
+
+--- SUCCESS ---
+Password found: FF4Q9
+Password search took: 0.3s
+Total AES evaluations: 553246
+Total execution time: 0.3s
+Guess command finished in 0.3s.
+🎉 SUCCESS! Hash: f367b5557726a7a7e3c412e2e2b8b67d, Password: FF4Q9
+
+-> Guessing hash: 0b912f372ae901469920803051d95b6c
+
+> Running: ./bin/guess ./bin/rainbow_l5_session.dat 0b912f372ae901469920803051d95b6c --threads 8 --verbose
+Table loaded and split for 8 threads. (took < 0.1s)
+
+--- FAILURE ---
+Password not found in the table.
+Password search took: 43.0s
+Total AES evaluations: 74776576
+Total execution time: 43.0s
+Guess command finished in 43.0s.
+
+-> Guessing hash: 7f150f7990a25b72ff2881afe4b88b62
+
+> Running: ./bin/guess ./bin/rainbow_l5_session.dat 7f150f7990a25b72ff2881afe4b88b62 --threads 8 --verbose
+Table loaded and split for 8 threads. (took < 0.1s)
+
+--- FAILURE ---
+Password not found in the table.
+Password search took: 39.3s
+Total AES evaluations: 74731520
+Total execution time: 39.4s
+Guess command finished in 39.4s.
+
+-> Guessing hash: 0593bd4d2a40db0ede8c55bf62ee8646
+
+> Running: ./bin/guess ./bin/rainbow_l5_session.dat 0593bd4d2a40db0ede8c55bf62ee8646 --threads 8 --verbose
+Table loaded and split for 8 threads. (took < 0.1s)
+
+--- SUCCESS ---
+Password found: TbHLa
+Password search took: 11.6s
+Total AES evaluations: 21345695
+Total execution time: 11.6s
+Guess command finished in 11.7s.
+🎉 SUCCESS! Hash: 0593bd4d2a40db0ede8c55bf62ee8646, Password: TbHLa
+
+-> Guessing hash: 801c580fd61a3a36feea0f027b990c22
+
+> Running: ./bin/guess ./bin/rainbow_l5_session.dat 801c580fd61a3a36feea0f027b990c22 --threads 8 --verbose
+Table loaded and split for 8 threads. (took < 0.1s)
+
+--- FAILURE ---
+Password not found in the table.
+Password search took: 42.0s
+Total AES evaluations: 75345920
+Total execution time: 42.1s
+Guess command finished in 42.1s.
+
+-> Guessing hash: 7f0398784a0692bd301804aeb9436d76
+
+> Running: ./bin/guess ./bin/rainbow_l5_session.dat 7f0398784a0692bd301804aeb9436d76 --threads 8 --verbose
+Table loaded and split for 8 threads. (took < 0.1s)
+
+--- SUCCESS ---
+Password found: uIbsX
+Password search took: 34.8s
+Total AES evaluations: 63676415
+Total execution time: 34.8s
+Guess command finished in 34.9s.
+🎉 SUCCESS! Hash: 7f0398784a0692bd301804aeb9436d76, Password: uIbsX
+
+--- [Attempt #3] Cracking 3 remaining hash(es) ---
+
+> Running: ./bin/table 5 262144 ./bin/rainbow_l5_session.dat --threads 8 --verbose
+--- Generating Rainbow Table (Parallel I/O) ---
+  Using 8 thread(s).
+  Chain generation and writing took: 9m 57s
+Consolidating temporary files...
+  File consolidation took: < 0.1s
+✅ Table generation done. (Total time: 9m 57s)
+Table command finished in 9m 57s.
+
+-> Guessing hash: 0b912f372ae901469920803051d95b6c
+
+> Running: ./bin/guess ./bin/rainbow_l5_session.dat 0b912f372ae901469920803051d95b6c --threads 8 --verbose
+Table loaded and split for 8 threads. (took 0.1s)
+
+--- SUCCESS ---
+Password found: PGrRX
+Password search took: 29.6s
+Total AES evaluations: 51470062
+Total execution time: 29.7s
+Guess command finished in 29.7s.
+🎉 SUCCESS! Hash: 0b912f372ae901469920803051d95b6c, Password: PGrRX
+
+-> Guessing hash: 7f150f7990a25b72ff2881afe4b88b62
+
+> Running: ./bin/guess ./bin/rainbow_l5_session.dat 7f150f7990a25b72ff2881afe4b88b62 --threads 8 --verbose
+Table loaded and split for 8 threads. (took < 0.1s)
+
+--- SUCCESS ---
+Password found: 1ha3F
+Password search took: 5.4s
+Total AES evaluations: 9823963
+Total execution time: 5.5s
+Guess command finished in 5.5s.
+🎉 SUCCESS! Hash: 7f150f7990a25b72ff2881afe4b88b62, Password: 1ha3F
+
+-> Guessing hash: 801c580fd61a3a36feea0f027b990c22
+
+> Running: ./bin/guess ./bin/rainbow_l5_session.dat 801c580fd61a3a36feea0f027b990c22 --threads 8 --verbose
+Table loaded and split for 8 threads. (took < 0.1s)
+
+--- SUCCESS ---
+Password found: 3BOKj
+Password search took: 10.8s
+Total AES evaluations: 18281668
+Total execution time: 10.9s
+Guess command finished in 10.9s.
+🎉 SUCCESS! Hash: 801c580fd61a3a36feea0f027b990c22, Password: 3BOKj
+
+✅ Finished processing all 5-char hashes in 37m 28s.
